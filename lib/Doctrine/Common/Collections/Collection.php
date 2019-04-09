@@ -162,7 +162,7 @@ interface Collection extends Countable, IteratorAggregate, ArrayAccess
      *
      * @return mixed
      *
-     * @psalm-return T|false
+     * @psalm-return T|null
      */
     public function first();
 
@@ -171,7 +171,7 @@ interface Collection extends Countable, IteratorAggregate, ArrayAccess
      *
      * @return mixed
      *
-     * @psalm-return T|false
+     * @psalm-return T|null
      */
     public function last();
 
@@ -189,7 +189,7 @@ interface Collection extends Countable, IteratorAggregate, ArrayAccess
      *
      * @return mixed
      *
-     * @psalm-return T|false
+     * @psalm-return T|null
      */
     public function current();
 
@@ -198,7 +198,7 @@ interface Collection extends Countable, IteratorAggregate, ArrayAccess
      *
      * @return mixed
      *
-     * @psalm-return T|false
+     * @psalm-return T|null
      */
     public function next();
 
@@ -271,10 +271,10 @@ interface Collection extends Countable, IteratorAggregate, ArrayAccess
      *
      * @param mixed $element The element to search for.
      *
-     * @return int|string|bool The key/index of the element or FALSE if the element was not found.
+     * @return int|string|null The key/index of the element or NULL if the element was not found.
      *
      * @psalm-param T $element
-     * @psalm-return TKey|false
+     * @psalm-return TKey|null
      */
     public function indexOf($element);
 
